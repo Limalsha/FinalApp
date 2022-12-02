@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="305.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.onpremiss.pos.controller.DashbordFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#openCustomerFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #27ae60;" text="Customer Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="307.0" layoutY="14.0" onAction="#openItemFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #3498db;" text="Item Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="155.0" onAction="#openPlaceOrderFormOnAction" prefHeight="109.0" prefWidth="855.0" style="-fx-background-color: #e74c3c;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="602.0" layoutY="14.0" onAction="#openOrderDetailsFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #f1c40f;" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="798.0" layoutY="270.0" text="Version 1.0.0" />
+      <Label layoutX="14.0" layoutY="281.0" text="Developed by Limalshau" />
+   </children>
+</AnchorPane>
