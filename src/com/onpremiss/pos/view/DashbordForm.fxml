@@ -3,13 +3,14 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="305.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.onpremiss.pos.controller.DashbordFormController">
+<AnchorPane fx:id="dashbordContext" prefHeight="375.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.onpremiss.pos.controller.DashbordFormController">
    <children>
-      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#openCustomerFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #27ae60;" text="Customer Management" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="56.0" onAction="#openCustomerFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #27ae60;" text="Customer Management" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
@@ -17,7 +18,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="307.0" layoutY="14.0" onAction="#openItemFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #3498db;" text="Item Management" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="307.0" layoutY="56.0" onAction="#openItemFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #3498db;" text="Item Management" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
@@ -25,7 +26,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="155.0" onAction="#openPlaceOrderFormOnAction" prefHeight="109.0" prefWidth="855.0" style="-fx-background-color: #e74c3c;" text="Place Order" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="181.0" onAction="#openPlaceOrderFormOnAction" prefHeight="109.0" prefWidth="855.0" style="-fx-background-color: #e74c3c;" text="Place Order" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
@@ -33,7 +34,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="602.0" layoutY="14.0" onAction="#openOrderDetailsFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #f1c40f;" text="Order Details" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="598.0" layoutY="56.0" onAction="#openOrderDetailsFormOnAction" prefHeight="109.0" prefWidth="273.0" style="-fx-background-color: #f1c40f;" text="Order Details" textFill="WHITE">
          <font>
             <Font name="System Bold" size="19.0" />
          </font>
@@ -41,7 +42,23 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label layoutX="798.0" layoutY="270.0" text="Version 1.0.0" />
-      <Label layoutX="14.0" layoutY="281.0" text="Developed by Limalshau" />
+      <Label layoutX="802.0" layoutY="331.0" text="Version 1.0.0" />
+      <Label layoutX="14.0" layoutY="331.0" text="Developed by Limalshau" />
+      <Label layoutX="24.0" layoutY="11.0" prefHeight="33.0" prefWidth="85.0" text="Stores">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="645.0" layoutY="16.0" prefHeight="27.0" prefWidth="121.0" text="2022-12-02" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" contentDisplay="RIGHT" layoutX="786.0" layoutY="16.0" prefHeight="21.0" prefWidth="85.0" text="14:31:50">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="773.0" layoutY="11.0" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="36.0" prefWidth="5.0" />
    </children>
 </AnchorPane>
