@@ -3,11 +3,13 @@ package com.onpremiss.pos.controller;
 import com.onpremiss.pos.db.Database;
 import com.onpremiss.pos.model.Customer;
 import com.onpremiss.pos.view.tm.CustomerTm;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Observable;
 
@@ -21,7 +23,14 @@ public void initialize(){
     searchCustomer();
 }
  private void searchCustomer(){
-     ObservableList<CustomerTm>
+     ObservableList<CustomerTm> tmList = FXCollections.observableArrayList();
+     for (Customer c:Database.customerTable)
+     {
+         Button btn = new Button("Delete");
+         CustomerTm tm = new CustomerTm(c.getId(), c.getName(), c.getAddress(), c.getSalary(),btn);
+         tmList.add(tm);
+     }
+
  }
 
 
